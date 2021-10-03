@@ -12,6 +12,7 @@
       </v-list-item-content>
     </v-list-item>
     <Carousel class="mt-2"/>
+    <Carousel class="mt-2"/>
   </v-card>
 </template>
 
