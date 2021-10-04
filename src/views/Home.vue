@@ -6,9 +6,15 @@
     <v-list-item three-line>
       <v-list-item-content>
         <div class="text-overline mb-4">
-          Hi! I'm a front-end developer!
+          Olá! eu sou Isaac! seu próximo front-end developer!
         </div>
-        <v-list-item-subtitle>Check it out some of my projects!</v-list-item-subtitle>
+        <Sobre/>
+        <v-list-item-subtitle class="mb-4">Atualmente busco me especializar nos melhores frameworks baseado em javascript do mercado.</v-list-item-subtitle>
+        <v-list-item-subtitle v-for="icon in icons" :key="icon" icon dark class="flex align-center">
+          <v-icon size='24px'>
+            {{icon}}
+          </v-icon>
+        </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <Carousel class="mt-2"/>
@@ -18,9 +24,21 @@
 
 <script>
 import Carousel from '../components/Carousel.vue'
+import Sobre from '../components/About.vue'
 
 export default {
-  components:{Carousel}
+  components:{Carousel,Sobre},
+  data(){
+    return{
+      icons:[
+        'mdi-language-javascript',
+        'mdi-vuejs',
+        'mdi-vuetify',
+        'mdi-angularjs',
+        'mdi-react'
+      ]
+    }
+  }
 }
 </script>
 

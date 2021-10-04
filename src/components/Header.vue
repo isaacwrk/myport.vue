@@ -6,8 +6,7 @@
         </v-toolbar-title>
         <v-toolbar-items>
             <v-btn flat to='/'>Início</v-btn>
-            <v-btn flat to='/about'>Sobre</v-btn>
-            <v-btn flat to='/skills'>Skills</v-btn>
+            <v-btn flat to='/about'>Saiba mais sobre mim</v-btn>
         </v-toolbar-items>
 </v-toolbar>
 </template>
