@@ -1,126 +1,75 @@
 <template>
-<div>
-<section class="location-section">
-    <h1>Sobre mim</h1>
-    <p>Eu sou cidadão do ponto mais oriental das américas! João Pessoa, Paraíba.</p>
-</section>
-<section class="location-section">
-    <h2>Experiência profissional:</h2>
-    <p>Possuo experiência fullstack, no qual ja trabalhei com intergração de sistemas com PHP, 
-    Postgres e os mais diversos frameworks front-end.</p>
-    <p>Atualmente trabalho apenas como desenvolvedor front-end, com as principais stacks do mercado javascript</p>
-    <h2>Meus hobbies?</h2>
-    <p>Estudar sobre front-end, viajar de moto e conhecer novos lugares!</p>
-    <h2>Minha forma de trabalho atual</h2>
-    <p>Hoje construo aplicações front-end preferênciamente com reactjs e vuejs em meus freelas.</p>
-</section>
-</div>
+  <v-container fluid grid-list-md>
+    <v-layout row wrap>
+      <v-flex d-flex xs12 sm6 md4>
+        <v-card color="purple" dark>
+          <v-card-title primary class="title">Sobre mim</v-card-title>
+          <v-card-text>{{lorem}}</v-card-text>
+           <v-row class="justify-center" style="cursor: pointer">
+          <v-card-subtitle v-for="icon in icons" :key="icon" icon dark >
+            <v-icon size='24px' :color='icon.color' :title='icon.ph'>
+              {{icon.icn}}
+            </v-icon>
+        </v-card-subtitle>
+      </v-row>
+        </v-card>
+      </v-flex>
+      <v-flex d-flex xs12 sm6 md3>
+        <v-layout row wrap>
+          <v-flex d-flex>
+            <v-card color="indigo" dark>
+              <v-card-title primary class="title">Lorem</v-card-title>
+              <v-card-text>{{lorem.slice(0,70)}}</v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex d-flex>
+            <v-layout row wrap>
+              <v-flex d-flex xs12 v-for="i in 2" :key="i">
+                <v-card color="red lighten-2" dark>
+                  <v-card-title>Lorem</v-card-title>
+                  <v-card-text>{{lorem.slice(0,40)}}</v-card-text>
+                </v-card>
+              </v-flex>
+            </v-layout>
+          </v-flex>
+        </v-layout>
+      </v-flex>
+      <v-flex d-flex xs12 sm6 md2 child-flex>
+            <v-card color="green lighten-2" dark>
+              <v-card-title primary class="title">Lorem</v-card-title>
+              <v-card-text>{{lorem.slice(0,90)}}</v-card-text>
+            </v-card>
+          </v-flex>
+          <v-flex d-flex xs12 sm6 md3>
+            <v-card color="blue lighten-2" dark>
+              <v-card-title primary class="title">Lorem</v-card-title>
+              <v-card-text>{{lorem.slice(0,100)}}</v-card-text>
+            </v-card>
+          </v-flex>
+    </v-layout>
+  </v-container>
 </template>
 
+<style>
+  .icons{
+    white-space: nowrap;
+  }
+</style>
 <script>
 export default {
-    name:'Sobre'
-}
-</script>
-
-<style>
-p, div {
-    font-weight: bold;
-    color: #2c3e50;
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 17px;
-    font-weight: bold;
-}
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.introduction-section > p,
-.location-section > p,
-.questions-section,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-}
-
-.questions-section > h2 {
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    /* Layout */
-    margin: 2em 0 1em 0;
-}
-
-section > h1 {
-    margin-top: 2em;
-}
-
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
-}
-
-.masthead {
-  padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top: solid 1em #FFCF33;
-}
-
-.masthead-intro {
-  margin-bottom: 0.1em;
-  font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
-
-.masthead-heading {
-  margin-top: -0.2em;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-  font-size: 6em;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-}
-.introduction > p,
-.location > p,
-.content-footer > p {
-    /* Typography Declarations */
-    font-weight: 300;
-    letter-spacing: 0.05em;
-}
-h2 {
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.introduction-section,
-.location-section,
-.questions-section {
-    max-width: 38em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-  
-@media only screen and (max-width: 500px) {
-    .masthead {
-        padding: 3em 0;
+  data () {
+    return {
+      icons:[
+        {icn:'mdi-language-javascript',color:'yellow',ph:'Javascript'},
+        {icn:'mdi-vuejs',color:'green',ph:'Vuejs'},
+        {icn:'mdi-vuetify',color:'blue darken-2',ph:'Vuetify'},
+        {icn:'mdi-angularjs',color:'red',ph:'Angular'},
+        {icn:'mdi-react',color:'teal',ph:'Reactjs'}
+      ],
+      lorem: `Olá sou Isaac, front-end developer de João Pessoa - Paraíba,
+        apaixonado por design e por inovação. Já atuei como fullstack contando com experiência em diversos cenários de integração com back e front-end com diversas stacks.
+        Atualmente trabalho com front-end com as principais stacks Javascript do mercado.`
     }
-    .masthead-heading {
-        font-size: 3em;
-    }
-    .content-footer {
-        padding: 2em 2.5em;
   }
 }
-</style>
+</script>
