@@ -4,10 +4,11 @@
     <h1>Sobre mim</h1>
     <p>Eu sou cidadão do ponto mais oriental das américas! João Pessoa, Paraíba.</p>
 </section>
-<section class="questions-section">
+<section class="location-section">
     <h2>Experiência profissional:</h2>
     <p>Possuo experiência fullstack, no qual ja trabalhei com intergração de sistemas com PHP, 
-    Postgres e os mais diversos frameworks front-end.Atualmente trabalho apenas como desenvolvedor front-end, com as principais stacks do mercado javascript</p>
+    Postgres e os mais diversos frameworks front-end.</p>
+    <p>Atualmente trabalho apenas como desenvolvedor front-end, com as principais stacks do mercado javascript</p>
     <h2>Meus hobbies?</h2>
     <p>Estudar sobre front-end, viajar de moto e conhecer novos lugares!</p>
     <h2>Minha forma de trabalho atual</h2>
@@ -23,47 +24,13 @@ export default {
 </script>
 
 <style>
-  body {
-    /* Typography Declarations */
-    color: #222222;
-    font-size: 1em;
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.content-footer,
-.masthead-heading,
-.masthead-intro {
-  text-align: center;
-}
-
-.masthead {
-  padding: 6em 0;
-  background-image: url('https://i.imgur.com/yGmrlyg.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-top: solid 1em #FFCF33;
-}
-
-.masthead-intro {
-    /* Layout Declarations */
-    margin-bottom: 0.1em;
-    /* Typography Declarations */
-    font-family: "Gentium Book Basic", Georgia, serif;
-    font-size: 2em;
-}
-
-.masthead-heading {
-    /* Layout Declarations */
-    color: #F1C863;
-    margin-top: -0.2em;
-    /* Typography Declarations */
-    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+p, div {
     font-weight: bold;
-    font-size: 6em;
-    letter-spacing: -0.02em;
-    text-transform: uppercase;
+    color: #2c3e50;
+    font-family: "Gentium Book Basic", Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
 }
-
 .introduction-section,
 .location-section,
 .questions-section {
@@ -79,7 +46,6 @@ export default {
 .content-footer > p {
     /* Typography Declarations */
     font-weight: 300;
-    letter-spacing: 0.05em;
 }
 
 .questions-section > h2 {
@@ -144,25 +110,7 @@ h2 {
     margin-right: auto;
     margin-top: 2em;
 }
-.content-footer {
-  margin: 50px 0;
-  padding: 20px 0;
-  text-align: center;
-  background-color: #73A8C2;
-  text-decoration: none;
-}
-.social > li {
-  display: inline-block;
-  margin: 0 5px;
-}
-.content-footer > p {
-  color: #F7EDE1;
-}
-a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #F1C863;
-}
+
   
 @media only screen and (max-width: 500px) {
     .masthead {
