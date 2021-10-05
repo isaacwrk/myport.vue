@@ -5,7 +5,7 @@
         <v-card color="purple darken-2" dark>
           <v-card-title primary class="title">Skills</v-card-title>
           <v-card-text class="about">{{lorem}}</v-card-text>
-           <v-row class="justify-center" style="cursor: pointer">
+          <v-row class="justify-center" style="cursor: pointer">
           <v-card-subtitle v-for="icon in icons" :key="icon" icon dark >
             <v-icon size='24px' :color='icon.color' :title='icon.ph'>
               {{icon.icn}}
@@ -18,6 +18,13 @@
         <v-card color="green darken-1" dark>
           <v-card-title primary class="title">Sobre mim</v-card-title>
             <v-card-text class="about">{{about}}</v-card-text>
+            <v-row class="justify-center" style="cursor: pointer">
+          <v-card-subtitle v-for="midia in midias" :key="midia">
+            <v-btn icon dark size='24px' :title='midia.ph'>
+                <a :href="midia.link" :target="midia.target" style="text-decoration:none;"><v-icon size="24px" :color='midia.color'>{{ midia.icn }}</v-icon></a>
+            </v-btn>
+        </v-card-subtitle>
+      </v-row>
         </v-card>
       </v-flex>
       <v-flex d-flex xs12 sm6 md4>
@@ -49,6 +56,12 @@ export default {
         {icn:'mdi-vuetify',color:'blue darken-2',ph:'Vuetify'},
         {icn:'mdi-angularjs',color:'red',ph:'Angular'},
         {icn:'mdi-react',color:'teal',ph:'Reactjs'}
+      ],
+      midias:[
+        {icn:'mdi-gmail',ph:'Gmail',color:'red',target:'_blank',link:'mailto:isaacsouzawrk@gmail.com'},
+        {icn:'mdi-linkedin',ph:'Linkedin',color:'blue darken-2',target:'_blank',link:'https://www.linkedin.com/in/isaac-souza-3942a1114/'},
+        {icn:'mdi-instagram',ph:'instagram',color:'purple',target:'_blank',link:'https://www.instagram.com/isaacwrk/'},
+        {icn:'mdi-github',ph:'Github',color:'black',target:'_blank',link:'https://github.com/isaacwrk'}
       ],
       lorem: `Já atuei como fullstack contando com experiência em diversos cenários de integração com back-end e front-end com diversas stacks.
               Atualmente trabalho com front-end com as principais stacks Javascript do mercado.`,
