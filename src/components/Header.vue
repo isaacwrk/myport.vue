@@ -8,34 +8,25 @@
             <v-btn flat to='/'>Início</v-btn>
         </v-toolbar-items>
         <v-spacer></v-spacer>
-        <v-toolbar-itens>
-            <v-btn
-            v-for="icon in icons"
-            :key="icon"
-            class="mx-4"
-            dark
-            icon
-        >
-        <v-icon size="24px">
-            {{ icon }}
-        </v-icon>
+    <v-toolbar-itens>
+        <v-btn icon dark size='24px' :title='midia.ph' v-for="midia in midias" :key="midia">
+            <a :href="midia.link" :target="midia.target" style="text-decoration:none;"><v-icon size="24px" color='white'>{{ midia.icn }}</v-icon></a>
         </v-btn>
-        </v-toolbar-itens>
+    </v-toolbar-itens>
 </v-toolbar>
 </template>
 
 <script>
 export default {
     data: () => ({
-    icons: [
-        'mdi-gmail',
-        'mdi-linkedin',
-        'mdi-instagram',
-        'mdi-github'
+    midias:[
+        {icn:'mdi-gmail',ph:'Gmail',color:'red',target:'_blank',link:'mailto:isaacsouzawrk@gmail.com'},
+        {icn:'mdi-linkedin',ph:'Linkedin',color:'blue darken-2',target:'_blank',link:'https://www.linkedin.com/in/isaac-souza-3942a1114/'},
+        {icn:'mdi-instagram',ph:'instagram',color:'purple',target:'_blank',link:'https://www.instagram.com/isaacwrk/'},
+        {icn:'mdi-github',ph:'Github',color:'black',target:'_blank',link:'https://github.com/isaacwrk'}
     ],
     }),
 }
-
 </script>
 
 <style>
