@@ -6,7 +6,7 @@
     <v-list-item>
       <v-list-item-content>
         <div class="text-overline mb-4">
-          Olá! eu sou Isaac! seu próximo front-end developer!
+          Olá! eu sou Isaac, seu próximo front-end developer!
         </div>
         <Sobre/>
         <v-list-item-subtitle class="mb-4 t">Confira abaixo alguns dos meus projetos!</v-list-item-subtitle>
