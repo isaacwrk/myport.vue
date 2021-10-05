@@ -9,7 +9,7 @@
           Olá! eu sou Isaac! seu próximo front-end developer!
         </div>
         <Sobre/>
-        <v-list-item-subtitle class="mb-4">Atualmente busco me especializar nos melhores frameworks baseado em javascript do mercado.</v-list-item-subtitle>
+        <v-list-item-subtitle class="mb-4">Confira alguns dos meus projetos abaixo.</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <Carousel class="mt-2"/>
