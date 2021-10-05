@@ -1,5 +1,5 @@
 <template>
-  <v-card class="mx-auto" max-width="100%" outlined>
+  <v-card class="mx-auto c" max-width="100%" outlined style="background-color:#d4d9d6;">
   <v-list-item-avatar rounded-circle size="200" color="grey" class="avatar">
       <v-img src='https://avatars.githubusercontent.com/u/62186529?v=4'></v-img>
       </v-list-item-avatar>

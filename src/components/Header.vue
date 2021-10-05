@@ -1,5 +1,5 @@
 <template>
-<v-toolbar>
+<v-toolbar style="background-color:#747875; color:#fff;">
         <v-toolbar-title class="headline text-uppercase mr-4">
             <span>Isaac</span>
             <span class="font-weight-light">Souza</span>
