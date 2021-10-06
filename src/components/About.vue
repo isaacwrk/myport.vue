@@ -50,11 +50,10 @@ export default {
         {icn:'mdi-angularjs',color:'red',ph:'Angular'},
         {icn:'mdi-react',color:'teal',ph:'Reactjs'}
       ],
-      lorem: `Já atuei como fullstack contando com experiência em diversos cenários de integração com back-end e front-end com diversas stacks.
-              Atualmente trabalho com front-end com as principais stacks Javascript do mercado.`,
-      about:`Sou natural e residente da cidade de João Pessoa - Paraíba, amante das duas rodas e apaixonado por animais. Busco em meu tempo livre conhecer novos
-      destinos desde praias até cidades antigas!`,
-      work:`Possuo experiência em projetos freelancer com HTML, CSS, Javascript, ou caso tenha preferência a um framework, trabalho com ReactJs e Vuejs.`,
+      lorem: `Já atuei como Fullstack contando com experiência em diversos cenários de integração com back-end e front-end em diversas stacks.
+              Atualmente trabalho com front-end com os principais frameworks Javascript do mercado.`,
+      about:`Sou natural e residente da cidade de João Pessoa - Paraíba, amante das duas rodas e apaixonado por animais. Busco em meu tempo livre explorar novos destinos de moto e ter novas experiências de vida!`,
+      work:`Possuo experiência em projetos freelancer com HTML, CSS, Javascript, e com frameworks ReactJs e Vuejs.`,
       work2:`Pode-me contratar por Regime CLT ou por Contrato para freelas! :D`
     }
   }

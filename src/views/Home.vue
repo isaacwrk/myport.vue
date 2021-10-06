@@ -8,7 +8,7 @@
         <div class="text-overline mb-4">
           Olá! eu sou Isaac, seu próximo front-end developer!
         </div>
-        <Sobre/>
+        <Sobre class="font"/>
         <v-list-item-subtitle class="mb-4 t">Confira abaixo alguns dos meus projetos!</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
